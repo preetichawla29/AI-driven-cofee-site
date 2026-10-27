@@ -1,0 +1,102 @@
+/* Dark espresso band closes the page */
+.footer {
+  background: var(--color-espresso);
+  color: var(--color-cream);
+}
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-3) var(--space-4);
+}
+
+/* Mobile first: columns stacked */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.name {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0;
+  max-width: var(--measure-narrow);
+}
+
+.heading {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.address {
+  margin-bottom: var(--space-2);
+  font-style: normal;
+}
+
+.line {
+  display: block;
+}
+
+/* Cream underlined links; the hover thickens the underline rather than
+   changing colour, since the brand oranges are too low-contrast here */
+.link {
+  color: var(--color-cream);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.link:focus-visible {
+  outline-color: var(--color-cream);
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+}
+
+.copyright {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding: var(--space-6) var(--space-5) var(--space-4);
+  }
+
+  .grid {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+/* Loading/error message takes the place of the Visit and Contact columns */
+@media (min-width: 768px) {
+  .infoStatus {
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+  /* Brand colors */
+  --color-cream: #f7f1e8;
+  --color-espresso: #3b2a20;
+  --color-accent: #c8763a;
+  --color-accent-dark: #a85f2c;
+  --color-accent-darker: #8f4f22;
+  --color-white: #ffffff;
+  --color-overlay: rgb(30 20 14 / 70%);
+  --color-border: #8a7a6e;
+  --color-error: #b3261e;
+  /* Loading skeletons: on light backgrounds, and on the espresso footer */
+  --color-skeleton: #ebe2d4;
+  --color-skeleton-dark: rgb(247 241 232 / 14%);
+
+  /* Fonts */
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+
+  /* Type scale */
+  --text-sm: 0.875rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-section: clamp(2rem, 3vw + 1rem, 2.75rem);
+  --text-hero: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  --tracking-label: 0.15em;
+
+  /* Layout */
+  --container: 1140px;
+  --measure: 36rem; /* readable width for intros */
+  --measure-narrow: 20rem;
+  --card-min: 18rem; /* narrowest a menu card gets before wrapping */
+  --field-min: 9rem; /* narrowest a form field gets before wrapping */
+  --nav-height: 72px;
+  --radius: 8px;
+  --shadow-card: 0 4px 16px rgb(59 42 32 / 8%);
+  --transition: 0.25s ease;
+  --transition-slow: 0.5s ease;
+  --pulse: 1.2s ease-in-out infinite alternate;
+}
+
+/* Keep anchor targets clear of the fixed navbar */
+html {
+  scroll-padding-top: calc(var(--nav-height) + var(--space-2));
+}
+
+/* Smooth anchor scrolling only for people who haven't asked for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-espresso);
+  background: var(--color-cream);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}

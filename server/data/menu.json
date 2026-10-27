@@ -1,0 +1,95 @@
+{
+  "currency": "USD",
+  "categories": [
+    {
+      "id": "coffee",
+      "title": "Coffee",
+      "items": [
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "description": "Single-origin, rich and bright.",
+          "price": 3
+        },
+        {
+          "id": "flat-white",
+          "name": "Flat white",
+          "description": "Double ristretto with velvety milk.",
+          "price": 4.2
+        },
+        {
+          "id": "bloom-latte",
+          "name": "Bloom latte",
+          "description": "Honey, lavender and a hint of vanilla.",
+          "price": 5
+        },
+        {
+          "id": "cold-brew",
+          "name": "Cold brew",
+          "description": "Steeped 18 hours, served over ice.",
+          "price": 4.5
+        }
+      ]
+    },
+    {
+      "id": "tea-and-more",
+      "title": "Tea & more",
+      "items": [
+        {
+          "id": "chai-latte",
+          "name": "Chai latte",
+          "description": "House-spiced chai with steamed milk.",
+          "price": 4.5
+        },
+        {
+          "id": "matcha-latte",
+          "name": "Matcha latte",
+          "description": "Ceremonial-grade matcha, lightly sweet.",
+          "price": 5
+        },
+        {
+          "id": "loose-leaf-tea",
+          "name": "Loose-leaf tea",
+          "description": "Ask about today's selection.",
+          "price": 3.5
+        },
+        {
+          "id": "hot-chocolate",
+          "name": "Hot chocolate",
+          "description": "Dark chocolate, whipped cream optional.",
+          "price": 4
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "title": "Bakery",
+      "items": [
+        {
+          "id": "butter-croissant",
+          "name": "Butter croissant",
+          "description": "Flaky, golden, baked every morning.",
+          "price": 3.5
+        },
+        {
+          "id": "cardamom-bun",
+          "name": "Cardamom bun",
+          "description": "Swedish-style knot with sugar crust.",
+          "price": 4
+        },
+        {
+          "id": "banana-bread",
+          "name": "Banana bread",
+          "description": "Toasted, with salted butter.",
+          "price": 3.8
+        },
+        {
+          "id": "avocado-toast",
+          "name": "Avocado toast",
+          "description": "Sourdough, chilli flakes, lemon.",
+          "price": 8.5
+        }
+      ]
+    }
+  ]
+}

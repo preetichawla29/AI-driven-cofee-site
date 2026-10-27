@@ -1,0 +1,31 @@
+.empty {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+}
+
+.body {
+  margin: var(--space-2) 0 0;
+}
+
+/* Compact, left-aligned version for the espresso footer */
+.dark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
+}
+
+.dark .title {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+}

@@ -1,0 +1,134 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background: transparent;
+  color: var(--color-espresso);
+  transition:
+    background var(--transition),
+    box-shadow var(--transition);
+}
+
+.scrolled {
+  background: var(--color-cream);
+  box-shadow: 0 2px 12px rgb(59 42 32 / 12%);
+}
+
+.inner {
+  max-width: var(--container);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Mobile first: menu hidden until toggled */
+.toggle {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-2);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.bar {
+  width: 24px;
+  height: 2px;
+  background: var(--color-espresso);
+}
+
+.nav {
+  position: absolute;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-3);
+  background: var(--color-cream);
+  box-shadow: 0 8px 12px rgb(59 42 32 / 12%);
+}
+
+.navOpen {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  font-weight: 500;
+  text-decoration: none;
+  padding: var(--space-1) 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.link:hover {
+  border-color: var(--color-accent);
+}
+
+/* Section currently in view */
+.link[aria-current="true"] {
+  color: var(--color-accent-darker);
+  border-color: var(--color-accent-darker);
+}
+
+.cta {
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background: var(--color-accent-dark);
+  color: var(--color-white);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.cta:hover {
+  background: var(--color-accent-darker);
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-5);
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .list {
+    flex-direction: row;
+    gap: var(--space-4);
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "src": "https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=800&h=600&q=75",
+      "width": 800,
+      "height": 600,
+      "alt": "Cafe counter with an espresso machine and grinders under hanging Edison bulbs",
+      "caption": "Our bar, where every cup is pulled to order."
+    },
+    {
+      "id": 2,
+      "src": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&h=600&q=75",
+      "width": 800,
+      "height": 600,
+      "alt": "Golden croissants being dusted with powdered sugar on a dark slate board",
+      "caption": "Croissants laminated by hand and baked at dawn."
+    },
+    {
+      "id": 3,
+      "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=600&q=75",
+      "width": 800,
+      "height": 600,
+      "alt": "Friends clinking two lattes and an iced coffee over a wooden table",
+      "caption": "Catch-ups are better over a flat white."
+    },
+    {
+      "id": 4,
+      "src": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&h=600&q=75",
+      "width": 800,
+      "height": 600,
+      "alt": "Cups of coffee with leaf and heart latte art among potted plants",
+      "caption": "Latte art, poured with a little extra love."
+    },
+    {
+      "id": 5,
+      "src": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=600&q=75",
+      "width": 800,
+      "height": 600,
+      "alt": "Rustic seeded loaves of bread with a sprig of wheat",
+      "caption": "Seeded loaves, fresh from the oven every morning."
+    },
+    {
+      "id": 6,
+      "src": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&h=600&q=75",
+      "width": 800,
+      "height": 600,
+      "alt": "Glowing marquee cafe sign above a chalkboard menu and green pendant lamps",
+      "caption": "Look for the glowing sign on Bloom Street."
+    }
+  ]
+}

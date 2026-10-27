@@ -1,0 +1,42 @@
+.skeleton {
+  display: block;
+  max-inline-size: 100%;
+  border-radius: var(--radius);
+  background: var(--color-skeleton);
+}
+
+.dark {
+  background: var(--color-skeleton-dark);
+}
+
+/* Heights follow the text they stand in for, so they scale with font size */
+.text {
+  height: 1em;
+  margin-block: var(--space-1);
+}
+
+.heading {
+  height: var(--text-xl);
+  margin-bottom: var(--space-2);
+}
+
+.block {
+  height: var(--space-6);
+}
+
+.tile {
+  aspect-ratio: 4 / 3;
+}
+
+/* Gentle pulse, skipped for people who have asked for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .skeleton {
+    animation: pulse var(--pulse);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0.5;
+  }
+}

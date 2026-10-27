@@ -1,0 +1,17 @@
+{
+  "name": "Brew & Bloom",
+  "address": ["12 Bloom Street", "Your Town, AB 12345"],
+  "phone": { "display": "(555) 012-3456", "href": "tel:+15550123456" },
+  "email": "hello@brewandbloom.example",
+  "timezone": "server local time",
+  "hours": [
+    {
+      "label": "Mon – Fri",
+      "days": [1, 2, 3, 4, 5],
+      "open": "07:00",
+      "close": "18:00"
+    },
+    { "label": "Sat – Sun", "days": [0, 6], "open": "08:00", "close": "17:00" }
+  ],
+  "booking": { "minGuests": 1, "maxGuests": 10 }
+}

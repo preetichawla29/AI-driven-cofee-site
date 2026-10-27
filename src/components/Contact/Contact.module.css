@@ -1,0 +1,207 @@
+/* White background sets it apart from the cream Gallery above */
+.contact {
+  background: var(--color-white);
+}
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-3);
+}
+
+.header {
+  max-width: var(--measure);
+  margin: 0 auto var(--space-5);
+  text-align: center;
+}
+
+.label {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-accent-darker);
+}
+
+.heading {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-section);
+  line-height: 1.2;
+}
+
+.intro {
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+/* Mobile first: info stacked above the form */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.subheading {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+}
+
+.info {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+}
+
+.address {
+  font-style: normal;
+}
+
+.muted {
+  margin: 0;
+  font-style: italic;
+}
+
+.addressLine {
+  display: block;
+}
+
+.hours {
+  margin: 0;
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  max-width: var(--measure-narrow);
+}
+
+.hoursRow dt {
+  font-weight: 600;
+}
+
+.hoursRow dd {
+  margin: 0;
+}
+
+.contactList {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  color: var(--color-accent-darker);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.link:hover {
+  color: var(--color-espresso);
+}
+
+.form {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background: var(--color-cream);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-1);
+  align-content: start;
+}
+
+.fieldLabel {
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.input {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-white);
+  color: var(--color-espresso);
+  font: inherit;
+  /* Stops native date/time inputs (iOS Safari) overflowing narrow screens */
+  min-width: 0;
+  max-width: 100%;
+}
+
+.input[aria-invalid="true"] {
+  border: 2px solid var(--color-error);
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.error {
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-error);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--field-min), 100%), 1fr));
+  gap: var(--space-3);
+}
+
+.submit {
+  justify-self: start;
+  padding: var(--space-3) var(--space-5);
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--color-accent-dark);
+  color: var(--color-white);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.submit:hover {
+  background: var(--color-accent-darker);
+}
+
+.status {
+  margin: 0;
+  font-weight: 600;
+}
+
+.statusError {
+  color: var(--color-error);
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-6);
+  }
+
+  .form {
+    padding: var(--space-5);
+  }
+}
+
+.submit[aria-disabled="true"] {
+  cursor: progress;
+}

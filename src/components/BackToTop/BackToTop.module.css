@@ -1,0 +1,43 @@
+.button {
+  position: fixed;
+  right: var(--space-3);
+  bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--space-6);
+  height: var(--space-6);
+  border-radius: 50%;
+  background: var(--color-accent-dark);
+  color: var(--color-white);
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover {
+  background: var(--color-accent-darker);
+}
+
+/* Fade only for people who haven't asked for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .button {
+    transition:
+      opacity var(--transition),
+      visibility var(--transition),
+      background var(--transition);
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    right: var(--space-5);
+    bottom: calc(var(--space-5) + env(safe-area-inset-bottom, 0px));
+  }
+}
